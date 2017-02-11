@@ -1,0 +1,25 @@
+# tar
+tar -zcvf finishedtarname.tar.gz foldertotar/
+tar -zxvf tarname.tar.gz -C pathfor/untared/
+
+
+
+# symbolic link
+ln -s EXISTING_FILE SYMLINK_FILE
+
+
+
+# cp /long/path/file.txt /long/path/file2.txt
+cp long/path{,file2.txt}
+cp -r /long/path{,newfolder/}
+
+
+
+# compiling c++
+g++ cppfile.cpp -o execfilename
+
+
+
+# uninstall removing dependices
+pacman -Rs <packagename>
+pacman -Rns <packagename> # remove config files

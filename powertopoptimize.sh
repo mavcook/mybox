@@ -1,0 +1,25 @@
+#!/bin/sh
+sudo  echo 'min_power' > '/sys/class/scsi_host/host0/link_power_management_policy'; 
+sudo  echo '1' > '/sys/module/snd_hda_intel/parameters/power_save'; 
+sudo  echo 'min_power' > '/sys/class/scsi_host/host1/link_power_management_policy'; 
+sudo  echo 'auto' > '/sys/bus/i2c/devices/i2c-1/device/power/control'; 
+sudo  echo 'auto' > '/sys/bus/i2c/devices/i2c-2/device/power/control'; 
+sudo  echo 'auto' > '/sys/bus/i2c/devices/i2c-4/device/power/control'; 
+sudo  echo 'auto' > '/sys/bus/usb/devices/1-2/power/control'; 
+sudo  echo 'auto' > '/sys/bus/i2c/devices/i2c-3/device/power/control'; 
+sudo  echo 'auto' > '/sys/bus/i2c/devices/i2c-5/device/power/control'; 
+sudo  echo 'auto' > '/sys/bus/i2c/devices/i2c-6/device/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:00:00.0/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:00:02.0/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:00:13.0/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:00:14.0/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:00:1a.0/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:00:1b.0/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:00:1c.0/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:00:1c.3/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:00:1f.0/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:02:00.0/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:03:00.0/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:03:00.2/power/control'; 
+sudo  echo 'auto' > '/sys/bus/pci/devices/0000:00:1c.1/power/control'; 
+sudo  ethtool -s enp3s0f2 wol d; 
