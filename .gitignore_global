@@ -1,0 +1,7 @@
+.vscode/
+config.py
+*.pyc
+**/venv/
+**/temp/
+**/*_gignore/
+*gignore*

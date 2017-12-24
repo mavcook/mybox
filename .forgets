@@ -19,7 +19,17 @@ cp -r /long/path{,newfolder/}
 g++ cppfile.cpp -o execfilename
 
 
+### Package Management ###
 
 # uninstall removing dependices
 pacman -Rs <packagename>
 pacman -Rns <packagename> # remove config files
+
+# get package info, good for finding what packages use package x
+pacman -Qi packagexstring
+
+# search for installed packages
+pacman -Qs packagestring
+
+# start virtual env with specific python
+virtualenv -p python3 venv

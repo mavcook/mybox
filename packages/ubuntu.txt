@@ -1,0 +1,15 @@
+plank
+git
+vlc
+shotwell
+virtualenv
+python-pip
+python3-pip
+vim
+keepassx
+virtualbox
+vagrant
+google-chrome-stable
+code
+numix-icon-theme-circle
+inkscape
